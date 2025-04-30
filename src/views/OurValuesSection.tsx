@@ -1,7 +1,23 @@
-import coffeIcon from "../../../public/icons/coffee-icon.svg"
-import catIcon from "../../../public/icons/cat-icon.svg"
-import plantIcon from "../../../public/icons/plant-icon.svg"
-import Card from "./Card"
+import coffeIcon from "../../public/icons/coffee-icon.svg"
+import catIcon from "../../public/icons/cat-icon.svg"
+import plantIcon from "../../public/icons/plant-icon.svg"
+
+type CardProps = {
+	src: string
+	alt: string
+	title: string
+	description: string
+}
+
+function Card({ src, alt, title, description }: CardProps) {
+	return (
+		<div className="bg-card flex w-full max-w-160 flex-col items-center gap-5 rounded-lg px-4 py-16 text-center drop-shadow-lg drop-shadow-[#0000001A]">
+			<img src={src} alt={alt} />
+			<h2 className="font-nohemi text-center text-2xl font-bold">{title}</h2>
+			<p className="text-lg">{description}</p>
+		</div>
+	)
+}
 
 export default function OurValuesSection() {
 	return (
