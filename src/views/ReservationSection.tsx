@@ -42,7 +42,7 @@ export default function ReservationSection() {
 			id="reservation"
 			className="bg-background-secondary flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:flex-row lg:gap-20 lg:px-20"
 		>
-			<div className="flex h-full flex-col gap-8 lg:w-6/7 lg:items-start lg:gap-14">
+			<div className="xs:max-w-11/12 flex h-full flex-col gap-8 lg:w-6/7 lg:items-start lg:gap-14">
 				<h2 className="font-nohemi text-center text-4xl font-semibold lg:text-5xl">
 					Réservez votre table !
 				</h2>
@@ -57,7 +57,7 @@ export default function ReservationSection() {
 			</div>
 			<form
 				onSubmit={onSubmit}
-				className="flex w-full flex-col items-end gap-6 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-8"
+				className="xs:max-w-11/12 flex w-full flex-col items-end gap-6 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-8"
 			>
 				<ReservationField name="name" label="Nom" />
 				<ReservationField name="firstname" label="Prénom" />
