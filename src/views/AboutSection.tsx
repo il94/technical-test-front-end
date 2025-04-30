@@ -2,7 +2,7 @@ import imageAboutUs from "../../public/images/image-about-us.png"
 
 export default function AboutSection() {
 	return (
-		<section className="bg-background-secondary flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:h-144 lg:flex-row-reverse lg:justify-end lg:gap-24 lg:px-20">
+		<section className="bg-background-secondary flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:flex-row-reverse lg:justify-end lg:gap-24 lg:px-20">
 			<div className="flex h-full flex-col gap-8 lg:w-4/7 lg:items-start lg:gap-14">
 				<h2 className="font-nohemi text-center text-4xl font-semibold lg:text-5xl">
 					Qui sommes-nous ?
