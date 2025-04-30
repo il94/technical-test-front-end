@@ -22,7 +22,7 @@ function NavbarButton({ sectionId, className, children }: NavbarButtonProps) {
 		<button
 			onClick={() => element && element.scrollIntoView({ behavior: "smooth" })}
 			className={cn(
-				"font-proxima-nova cursor-pointer p-1 text-sm md:text-lg lg:text-xl",
+				"font-proxima-nova xs:text-sm cursor-pointer p-1 md:text-lg lg:text-xl",
 				className,
 			)}
 		>
