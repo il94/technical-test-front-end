@@ -31,7 +31,7 @@ export default function Navbar() {
 	const isTablet = useIsTablet()
 
 	return (
-		<nav className="flex h-24 items-center justify-between overflow-hidden p-3">
+		<nav className="flex h-24 shrink-0 items-center justify-between overflow-hidden p-3 sm:px-11">
 			<Logo />
 			{isTablet ? (
 				<div className="flex gap-10">

@@ -1,9 +1,8 @@
-import WelcomeSection from "./views/WelcomeSection"
-
+import HeroSection from "./views/HeroSection"
 function App() {
 	return (
 		<main>
-			<WelcomeSection />
+			<HeroSection />
 		</main>
 	)
 }
