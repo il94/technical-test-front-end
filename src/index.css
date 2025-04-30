@@ -1,35 +1,47 @@
+@import "tailwindcss";
+
 /* Custom fonts */
 @font-face {
-  font-family: 'Nohemi';
-  font-weight: 500;
-  src: local('Nohemi'), url(/fonts/Nohemi-Medium.woff) format('woff');
+	font-family: "Nohemi";
+	font-weight: 500;
+	src:
+		local("Nohemi"),
+		url(/fonts/Nohemi-Medium.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Nohemi';
-  font-weight: 600;
-  src: local('Nohemi'), url(/fonts/Nohemi-SemiBold.woff) format('woff');
+	font-family: "Nohemi";
+	font-weight: 600;
+	src:
+		local("Nohemi"),
+		url(/fonts/Nohemi-SemiBold.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Nohemi';
-  font-weight: 700;
-  src: local('Nohemi'), url(/fonts/Nohemi-Bold.woff) format('woff');
+	font-family: "Nohemi";
+	font-weight: 700;
+	src:
+		local("Nohemi"),
+		url(/fonts/Nohemi-Bold.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  font-weight: 500;
-  src: local('Proxima Nova'), url(/fonts/Proximanova-Medium.otf) format('otf');
+	font-family: "Proxima Nova";
+	font-weight: 500;
+	src:
+		local("Proxima Nova"),
+		url(/fonts/Proximanova-Medium.otf) format("otf");
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  font-weight: 700;
-  src: local('Proxima Nova'), url(/fonts/Proximanova-Bold.otf) format('otf');
+	font-family: "Proxima Nova";
+	font-weight: 700;
+	src:
+		local("Proxima Nova"),
+		url(/fonts/Proximanova-Bold.otf) format("otf");
 }
 
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -96,4 +108,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
