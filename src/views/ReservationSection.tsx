@@ -38,7 +38,10 @@ export default function ReservationSection() {
 	}, [])
 
 	return (
-		<section className="bg-background-secondary flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:flex-row lg:gap-20 lg:px-20">
+		<section
+			id="reservation"
+			className="bg-background-secondary flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:flex-row lg:gap-20 lg:px-20"
+		>
 			<div className="flex h-full flex-col gap-8 lg:w-6/7 lg:items-start lg:gap-14">
 				<h2 className="font-nohemi text-center text-4xl font-semibold lg:text-5xl">
 					Réservez votre table !

@@ -10,13 +10,17 @@ import { cn } from "../../lib/utils"
 */
 
 type NavbarButtonProps = {
+	sectionId: "about" | "values" | "reservation"
 	children: ReactNode
 	className?: string
 }
 
-function NavbarButton({ className, children }: NavbarButtonProps) {
+function NavbarButton({ sectionId, className, children }: NavbarButtonProps) {
+	const element = document.getElementById(sectionId)
+
 	return (
 		<button
+			onClick={() => element && element.scrollIntoView({ behavior: "smooth" })}
 			className={cn(
 				"font-proxima-nova cursor-pointer p-1 text-sm md:text-lg lg:text-xl",
 				className,
@@ -31,13 +35,15 @@ export default function Navbar() {
 	const isTablet = useIsTablet()
 
 	return (
-		<nav className="flex h-24 shrink-0 items-center justify-between overflow-hidden p-3 sm:px-11">
+		<nav className="flex h-24 shrink-0 items-center justify-between overflow-hidden p-4 sm:px-11">
 			<Logo />
 			{isTablet ? (
 				<div className="flex gap-10">
-					<NavbarButton>Qui sommes-nous ?</NavbarButton>
-					<NavbarButton>Nos valeurs</NavbarButton>
-					<NavbarButton className="text-primary">Réservez !</NavbarButton>
+					<NavbarButton sectionId="about">Qui sommes-nous ?</NavbarButton>
+					<NavbarButton sectionId="values">Nos valeurs</NavbarButton>
+					<NavbarButton sectionId="reservation" className="text-primary">
+						Réservez !
+					</NavbarButton>
 				</div>
 			) : (
 				<button>

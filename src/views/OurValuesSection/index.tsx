@@ -5,7 +5,10 @@ import Card from "./Card"
 
 export default function OurValuesSection() {
 	return (
-		<section className="flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:gap-15 lg:px-20 lg:py-40">
+		<section
+			id="values"
+			className="flex w-full flex-col items-center justify-center gap-8 px-7 py-20 lg:gap-15 lg:px-20 lg:py-40"
+		>
 			<h2 className="font-nohemi text-primary text-center text-4xl font-semibold lg:text-5xl">
 				Nos valeurs
 			</h2>

@@ -8,7 +8,7 @@ export default function HeroSection() {
 			<Navbar />
 			<div className="flex h-full w-full flex-col items-center gap-6 px-7 text-center lg:flex-row lg:justify-center lg:px-12 lg:pb-20 lg:text-left">
 				<div className="flex flex-col items-center gap-6 lg:w-1/2 lg:items-start lg:pl-16">
-					<h1 className="font-nohemi xs:text-4xl text-2xl font-medium lg:text-6xl">
+					<h1 className="font-nohemi xs:text-4xl text-4xl font-medium lg:text-6xl">
 						Bienvenue chez Café Neko
 					</h1>
 					<h2 className="font-nohemi xs:text-xl text-lg font-medium">
