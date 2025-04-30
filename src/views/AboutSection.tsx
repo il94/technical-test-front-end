@@ -6,7 +6,7 @@ export default function AboutSection() {
 			<h2 className="font-nohemi text-center text-4xl font-semibold">
 				Qui sommes-nous ?
 			</h2>
-			<p>
+			<p className="leading-[180%]">
 				Bienvenue chez Café Neko, l'endroit où le café et les chats se
 				rencontrent pour créer une expérience unique en son genre.
 				<br />
