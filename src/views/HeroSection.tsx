@@ -1,8 +1,12 @@
-import Button from "../../components/Button"
-import Navbar from "./Navbar"
-import catHeroSection from "../../../public/images/cat-hero-section.png"
+import Button from "../components/Button.tsx"
+import Navbar from "./Navbar/index.tsx"
+import catHeroSection from "../../public/images/cat-hero-section.png"
+import { useState } from "react"
+import { cn } from "../lib/utils.ts"
 
 export default function HeroSection() {
+	const [LOL, setLOL] = useState(false)
+
 	return (
 		<section className="flex h-screen w-full flex-col overflow-hidden sm:py-5">
 			<Navbar />
@@ -20,11 +24,15 @@ export default function HeroSection() {
 					</p>
 					<Button>Nous contacter</Button>
 				</div>
-				<div className="flex h-full max-h-115 w-full justify-center lg:w-2/3">
+				<div className="flex h-full max-h-115 w-full justify-center lg:max-h-full lg:w-2/3">
 					<img
 						src={catHeroSection}
 						alt="cat-hero-section"
-						className="object-contain px-5"
+						onClick={() => setLOL(!LOL)}
+						className={cn(
+							"cursor-pointer object-contain px-5",
+							LOL && "animate-spin",
+						)}
 					/>
 				</div>
 			</div>
