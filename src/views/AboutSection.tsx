@@ -1,4 +1,4 @@
-import imageAboutUs from "../../public/images/image-about-us.png"
+import imageAboutUs from "/images/image-about-us.png"
 
 export default function AboutSection() {
 	return (

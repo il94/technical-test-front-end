@@ -1,6 +1,6 @@
-import coffeIcon from "../../public/icons/coffee-icon.svg"
-import catIcon from "../../public/icons/cat-icon.svg"
-import plantIcon from "../../public/icons/plant-icon.svg"
+import coffeIcon from "/icons/coffee-icon.svg"
+import catIcon from "/icons/cat-icon.svg"
+import plantIcon from "/icons/plant-icon.svg"
 
 type CardProps = {
 	src: string

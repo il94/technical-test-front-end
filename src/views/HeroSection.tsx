@@ -1,6 +1,6 @@
 import Button from "../components/Button.tsx"
 import Navbar from "./Navbar/index.tsx"
-import catHeroSection from "../../public/images/cat-hero-section.png"
+import catHeroSection from "/images/cat-hero-section.png"
 import { useState } from "react"
 import { cn } from "../lib/utils.ts"
 
